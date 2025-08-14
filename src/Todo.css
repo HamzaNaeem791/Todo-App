@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+}
+
+.Box {
+  width: 500px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Heading */
+.Box h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Input & Add Button on Same Line */
+.input-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.Box2 {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.Box2:focus {
+  border-color: #4cafef;
+  box-shadow: 0px 0px 8px rgba(76, 175, 239, 0.3);
+}
+
+.Button {
+  background: #4cafef;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.Button:hover {
+  background: #3a9ed6;
+  transform: scale(1.05);
+}
+
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+  font-size: 16px;
+}
+
+li.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.Button.done {
+  background: #2ecc71;
+}
+.Button.done:hover {
+  background: #27ae60;
+}
+
+.Button.edit {
+  background: #f1c40f;
+  color: #2c3e50;
+}
+.Button.edit:hover {
+  background: #d4ac0d;
+}
+
+.Button.delete {
+  background: #e74c3c;
+}
+.Button.delete:hover {
+  background: #c0392b;
+}
